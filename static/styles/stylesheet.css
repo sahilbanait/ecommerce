@@ -1,0 +1,60 @@
+:root{
+    --orange:#FF7E1B;
+    --black:#1D2026;
+    --white_background:#FFFFFF;
+    --nav_items:#69707D;
+    font-family: 'Kumbh Sans', sans-serif;
+    transition: ease-in 0.05ms;
+}
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    gap: 1.5rem;
+    text-align: center;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+
+}
+nav ul li:first-child{
+    justify-content: flex-start;
+}
+nav ul a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    margin: 20px;
+    font-size: 20px;
+    flex-flow: row;
+}
+#nav-div-one{
+    flex: 1;
+    text-align: end;
+}
+#nav-div-two{
+    flex: 2;
+    text-align: start;
+}
+#nav-div-three{
+    flex: 1;
+}
+
