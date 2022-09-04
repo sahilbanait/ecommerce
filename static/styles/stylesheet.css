@@ -3,8 +3,8 @@
     --black:#1D2026;
     --white_background:#FFFFFF;
     --nav_items:#69707D;
-    font-family: 'Kumbh Sans', sans-serif;
-    transition: ease-in 0.05ms;
+    --font-family: 'Kumbh Sans', sans-serif;
+    --transition: ease-in 0.05ms;
 }
 /* resets */
 * {
@@ -23,38 +23,65 @@ html, body {
     justify-content: space-around;
     box-sizing: border-box;
 }
+#nav-wrapper{
+    border-bottom:1px #69707D solid ;
+}
 nav ul{
     list-style-type: none;
     display: flex;
     flex-flow: row;
-    gap: 1.5rem;
+    gap: 2rem;
+    color: var(--nav_items);
     text-align: center;
     align-content: stretch;
     align-items: center;
     justify-content: center;
 
 }
-nav ul li:first-child{
-    justify-content: flex-start;
-}
 nav ul a{
     text-decoration: none;
 }
-nav{
+nav {
+    margin: 10px 0 0 20px;
     display: flex;
-    margin: 20px;
-    font-size: 20px;
+    font-size: 14px;
+    position: absolute;
+    left: 100px;
+    right: 100px;
     flex-flow: row;
+
 }
-#nav-div-one{
-    flex: 1;
-    text-align: end;
+#nav-div-two a:hover{
+    font-size: 18px;
+}
+#nav-header{
+    margin-right: 10px;
+    font-size: 35px;
+    color: var(--black);
 }
 #nav-div-two{
     flex: 2;
-    text-align: start;
+    align-self: center;
+    justify-content: center;
 }
 #nav-div-three{
     flex: 1;
+    align-self: center;
+    justify-content: center;
+    margin-left: 20px;
 }
-
+#nav-div-three #cart{
+    font-size: 20px;
+}
+#nav-div-three #cart:hover{
+    font-size: 26px;
+}
+#image-avatar{
+   width: 40px;
+}
+#image-avatar:hover{
+    width: 45px;
+}
+#separator{
+    border: 2px var(--nav_items) solid;
+}
