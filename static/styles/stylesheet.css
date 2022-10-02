@@ -23,15 +23,12 @@ html, body {
     justify-content: space-around;
     box-sizing: border-box;
 }
-#nav-wrapper{
-    border-bottom:1px #69707D solid ;
-}
+
 nav ul{
     list-style-type: none;
     display: flex;
     flex-flow: row;
     gap: 2rem;
-    color: var(--nav_items);
     text-align: center;
     align-content: stretch;
     align-items: center;
@@ -39,6 +36,7 @@ nav ul{
 
 }
 nav ul a{
+    color: var(--nav_items);
     text-decoration: none;
 }
 nav {
@@ -48,11 +46,13 @@ nav {
     position: absolute;
     left: 100px;
     right: 100px;
+    border: var(--nav_items) solid 5px 5px 0px 0;
     flex-flow: row;
 
 }
 #nav-div-two a:hover{
-    font-size: 18px;
+    color: var(--orange);
+    transition: ease-in-out 1ms;
 }
 #nav-header{
     margin-right: 10px;
@@ -74,13 +74,18 @@ nav {
     font-size: 20px;
 }
 #nav-div-three #cart:hover{
-    font-size: 26px;
+    color: var(--orange);
 }
 #image-avatar{
    width: 40px;
 }
 #image-avatar:hover{
-    width: 45px;
+    border: #FF7E1B solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cart:hover{
+    color: var(--orange);
 }
 #separator{
     border: 2px var(--nav_items) solid;
