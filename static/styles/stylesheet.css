@@ -147,6 +147,13 @@ nav {
     margin: 10px;
     height: 150px;
 }
+.thumbnail:hover{
+    cursor: pointer;
+    border: 2px solid var(--Orange);
+    border-radius: 5px;
+    opacity: 60%;
+
+}
 .product-card{
     position: relative;
     display: flex;
