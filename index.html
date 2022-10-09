@@ -11,51 +11,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>E-commerce product page</title>
 </head>
 
 <body>
 <nav>
-    <div id="nav-container">
-        <div id="nav-items-one">
-            <ul>
-                <li><a href="#"><img src="static/images/logo.svg" id="nav-header" alt=""></a></li>
-                <li><a href="#">Collection</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div id="separator"></div>
-        <div id="nav-items-two">
-            <ul>
-                <li><a href="" id="cart"><img src="static/images/icon-cart.svg" alt=""></a></li>
-            </ul>
-            <img id="image-avatar" src="static/images/image-avatar.png" class="rounded" alt="Cinque Terre">
-        </div>
-    </div>
-    <div id="border">
-    </div>
+    <!--     <div id="nav-container"> -->
+    <!--         <div id="nav-items-one"> -->
+    <!--             <ul> -->
+    <!--                 <li><a href="#"><img src="static/images/logo.svg" id="nav-header" alt=""></a></li> -->
+    <!--                 <li><a href="#">Collection</a></li> -->
+    <!--                 <li><a href="#">Men</a></li> -->
+    <!--                 <li><a href="#">Women</a></li> -->
+    <!--                 <li><a href="#">About</a></li> -->
+    <!--                 <li><a href="#">Contact</a></li> -->
+    <!--             </ul> -->
+    <!--         </div> -->
+    <!--         <div id="separator"></div> -->
+    <!--         <div id="nav-items-two"> -->
+    <!--             <ul> -->
+    <!--                 <li><a href="" id="cart"><img src="static/images/icon-cart.svg" alt=""></a></li> -->
+    <!--             </ul> -->
+    <!--             <img id="image-avatar" src="static/images/image-avatar.png" class="rounded" alt="Cinque Terre"> -->
+    <!--         </div> -->
+    <!--     </div> -->
+    <!--     <div id="border"> -->
+    <!--     </div> -->
 
 
 </nav>
 
 
-<div>
-    <div>
-        <div>
-            <div>
-                <img id="main-product-img" src="static/images/image-product-1.jpg">
+<main>
+    <div class="container">
+        <div class="product-card grid">
+            <div class="product-card-img-container">
+                <div class="main-img-container">
+                    <img class="product-card-main-img" src="static/images/image-product-1.jpg" alt="">
+                </div>
+                <div id="product-thumnail-container">
+                    <div class="product-thumnails ">
+                        <div class="thumbnail"><img class="thumbnail-img"
+                                                    src="static/images/image-product-1-thumbnail.jpg" alt=""></div>
+                        <div class="thumbnail"><img class="thumbnail-img"
+                                                    src="static/images/image-product-1-thumbnail.jpg" alt=""></div>
+                        <div class="thumbnail"><img class="thumbnail-img"
+                                                    src="static/images/image-product-1-thumbnail.jpg" alt=""></div>
+                        <div class="thumbnail"><img class="thumbnail-img"
+                                                    src="static/images/image-product-1-thumbnail.jpg" alt=""></div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div>
-            <h1>Fall Limited Edition Sneakers</h1>
+            <div class="product-card-details">
+                <h6 class="fs-4">SNEAKER COMPANY</h6>
+                <div class="product-name-desc">
+                    <div ><span class="fs-1">Fall Limited Edition Sneakers</span></div>
+                    <div class="product-description">
+                            These low-profile sneakers are your perfect casual wear
+                            companion. Featuring a durable rubber outer sole, they'll withstand everything
+                            the weather can offer
+                    </div>
+                    <div class="product-price-container">
+                        <div id="product-price">
+                            <div>$250.00</div>
+                            <div>50%</div>
+                        </div>
+
+                        <div>$250</div>
+                    </div>
+
+                    <div>
+                            <div></div>
+                            <div></div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
 
     </div>
-</div>
-
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
