@@ -133,6 +133,12 @@ nav {
     border-radius: 10px;
     margin: 10px;
 }
+.main-img-container:hover{
+    cursor: pointer;
+    border: 2px solid var(--Orange);
+    border-radius: 5px;
+    opacity: 60%;
+}
 .product-card-main-img{
 
     border-radius: 10px;
@@ -243,5 +249,26 @@ nav {
 #product-price{
     display: flex;
     flex-flow: row;
+    align-items: center;
     justify-content: space-between;
+}
+#product-price-discounted{
+    font-size: 28px;
+    font-weight: bolder;
+}
+#product-discount{
+    padding: 10px;
+    background: var(--Pale_Orange);
+    color: var(--Orange);
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px;
+    font-weight: bolder;
+}
+#product-price-original{
+    color: var(--Dark_grayish_blue);
+    font-weight: bold;
+}
+s{
+    color: var(--Dark_grayish_blue);
 }
