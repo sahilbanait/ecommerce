@@ -47,8 +47,7 @@ html, body {
     border-radius: 50%;
 }
 
-.user-img:hover,
-.user-img:focus {
+.user-img:hover, .user-img:focus {
     box-shadow: var(--Orange);
 }
 
@@ -135,7 +134,7 @@ hr {
 
 .checkout {
     width: 100%;
-    background-color:var(--Orange);
+    background-color: var(--Orange);
     border-radius: .5rem;
     border: none;
     height: 3rem;
@@ -171,7 +170,7 @@ hr {
 
 /* Product images */
 
-.thumbnail-img{
+.thumbnail-img {
     width: 100%;
 }
 
