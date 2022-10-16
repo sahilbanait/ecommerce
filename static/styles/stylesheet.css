@@ -395,8 +395,7 @@ hr {
     }
 
 
-    #previous:hover,
-    #next:hover {
+    #previous:hover, #next:hover {
         cursor: pointer;
     }
 
