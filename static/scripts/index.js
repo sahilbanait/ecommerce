@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     let expandMainImg = document.getElementById("mainImage");
-    const next = document.getElementById("next");
-    const previous = document.getElementById("previous");
+    const next = document.querySelector("#next");
+    const previous = document.querySelector("#previous");
     const thumbnailImages = document.querySelectorAll(".thumbnail-img");
 
     const cartAdd = document.getElementById('cart-increase');
@@ -37,29 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // next product image
-    next.addEventListener("click", () => {
-        currentImg = expandMainImg.src;
-        let i = 0;
-        while (i < thumbnailImages.length - 1) {
-            if (currentImg === thumbnailImages[i].src) {
-                expandMainImg.src = thumbnailImages[i + 1].src;
-            }
-            i++;
-        }
-    });
 
-    //  previous product image
-    previous.addEventListener("click", () => {
-        currentImg = expandMainImg.src;
-        let i = thumbnailImages.length - 1;
-        while (i > 0) {
-            if (currentImg === thumbnailImages[i].src) {
-                expandMainImg.src = thumbnailImages[i - 1].src;
-            }
-            i--;
-        }
-    });
 
     //  add to cart
     cartAdd.addEventListener('click', () => {
@@ -84,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     addToCart.addEventListener('click', () => {
         if (parseInt(cartNum.textContent) > 0){
             cartBadge.style.display = "block"
+            console.log()
             cartBadge.textContent = parseInt(cartBadge.textContent) + parseInt(cartNum.textContent);
             numOfProductInCart.textContent = cartBadge.textContent;
             totalPrice.textContent = ` $${(parseFloat(PRODUCT_PRICE) * parseFloat(numOfProductInCart.textContent)).toFixed(2)}`;
@@ -105,13 +84,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
     shoppingCart.addEventListener('click', () => {
         toggleActiveCartContainer()
-
+        console.log('cart clicked')
         if (parseInt(cartBadge.textContent) > 0 ) {
             toggleActiveInCartProduct()
         } else {
             toggleActiveEmptyCart()
         }
     })
+    // next product image
+    next.addEventListener("click", () => {
+        currentImg = expandMainImg.src;
+        console.log('Next Clicked')
+        let i = 0;
+        while (i < thumbnailImages.length - 1) {
+            if (currentImg === thumbnailImages[i].src) {
+                expandMainImg.src = thumbnailImages[i + 1].src;
+            }
+            i++;
+        }
+    });
+
+    //  previous product image
+    previous.addEventListener("click", () => {
+        currentImg = expandMainImg.src;
+        console.log('Previous Clicked')
+        let i = thumbnailImages.length - 1;
+        while (i > 0) {
+            if (currentImg === thumbnailImages[i].src) {
+                expandMainImg.src = thumbnailImages[i - 1].src;
+            }
+            i--;
+        }
+    });
 
     deleteIcon.addEventListener('click', () => {
         cartBadge.textContent = 0;
